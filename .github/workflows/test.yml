@@ -1,0 +1,13 @@
+name: Webhook Workflow
+
+on:
+  repository_dispatch:
+    types: [my-event]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a command
+      run: echo "The workflow runs every day at 05:00 UTC."
