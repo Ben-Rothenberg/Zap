@@ -1,5 +1,7 @@
 name: Webhook Workflow
-
+env:
+  owner: Ben-Rothenberg
+  Repo: Zap
 on:
   repository_dispatch:
     types: [my-event]
